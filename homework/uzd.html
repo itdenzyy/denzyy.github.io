@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Patstavigais darbs</title>
+</head>
+<body bgcolor="blue">
+
+	<p id="p1" style="color:red">Rīga ir Latvijas galvaspilsēta, valstspilsēta un viens no galvenajiem rūpniecības, darījumu, kultūras, 
+	sporta un finanšu centriem Baltijas valstīs, kā arī nozīmīga ostas pilsēta. 
+	Ar 605 273 iedzīvotājiem (2024. gada dati) tā ir lielākā apdzīvotā vieta Latvijā.</p>
+	<p id="p2" style="font-family:Arial">Kopš dibināšanas 1201. gadā līdz mūsu dienām Rīga ir Baltijas valstu lielākā pilsēta
+	un viena no ievērojamākajām ostām Baltijas jūras austrumdaļā.</p><br>
+
+	<p>Formula - E = <i>mc</i><sup>2</sup></p><br>
+		
+	<img id="bilde" src="avatar.jpg" width="300" height="250" alt="Profila bilde"><br><br>
+	
+	<a href="https://www.google.com" target="_blank">Links uz Google</a><br><br>
+	
+	<table id="tabula" border="1" cellpadding="10" cellspacing="4">
+		<tr>
+			<td>1</td><td>2</td><td bgcolor="green">3</td><td>4</td>
+		</tr>
+		<tr>
+			<td>5</td><td bgcolor="green">6</td><td>7</td><td>8</td>
+		</tr>
+	</table><br><br>
+	
+	<button id="poga1">Nospiest1</button>
+	<button id="poga2">Nospiest2</button><br><br>
+<script>
+	document.getElementById("poga1").addEventListener("click",func1);
+	
+	document.getElementById("poga2").addEventListener("click",func2);
+	
+	document.getElementById("bilde").addEventListener("mouseover",func3);
+	
+	document.getElementById("bilde").addEventListener("mouseout",func4);
+	
+	
+
+	//pirma poga
+	function func1() {
+		document.body.style.backgroundColor = "lightgreen";
+		p1.style.color = "blue";
+		p2.style.color = "blue";
+	}
+		
+	//otra poga	
+	function func2() {
+        let row = tabula.insertRow();
+            for (let i = 0; i < 4; i++) {
+                let cell = row.insertCell();
+			}
+    }
+
+	//attels
+	function func3() {
+        bilde.width = 400;
+        bilde.height = 300;
+    }
+	
+	function func4() {
+        bilde.width = 300;
+        bilde.height = 250;
+    }
+
+</script>
+</body>
+</html>
