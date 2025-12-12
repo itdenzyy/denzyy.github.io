@@ -1,71 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>My github work</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body bgcolor="blue">
 
-	<p id="p1" style="color:red">Rīga ir Latvijas galvaspilsēta, valstspilsēta un viens no galvenajiem rūpniecības, darījumu, kultūras, 
-	sporta un finanšu centriem Baltijas valstīs, kā arī nozīmīga ostas pilsēta. 
-	Ar 605 273 iedzīvotājiem (2024. gada dati) tā ir lielākā apdzīvotā vieta Latvijā.</p>
-	<p id="p2" style="font-family:Arial">Kopš dibināšanas 1201. gadā līdz mūsu dienām Rīga ir Baltijas valstu lielākā pilsēta
-	un viena no ievērojamākajām ostām Baltijas jūras austrumdaļā.</p><br>
+  <body>
+      <header>
+          <nav>
+            <ul>
+              <li><a href="index.html">Deniss Maklers</a></li>
+              <li><a href="index.html">About</a></li>
+              <li><a href="https://www.linkedin.com/in/denzyy/">LinkedIn</a></li>
+              <li><a href="https://github.com/itdenzyy">My portfolio</a></li>
+              <li><a href="mailto:denissmaklers@gmail.com">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="flex-container">
+            <img height="400px" width="300px" src="images/portrait.jpg">
+            <div class="text-conntainer">
+              <h1>Welcome to my profile!</h1>
+              <p>My name is Deniss and I'm a <strong>Junior Front-End developer</strong> with basic Web developing knowledge.</p>
+              <a href="https://www.linkedin.com/in/denzyy/" class="cta-button">My LinkedIn profile</a>
+              <a href="#my-work" class="cta-button secondary">See my works</a>
+            </div>
+          </div>
+      </header>
 
-	<p>Formula - E = <i>mc</i><sup>2</sup></p><br>
-		
-	<img id="bilde" src="avatar.jpg" width="300" height="250" alt="Profila bilde"><br><br>
-	
-	<a href="https://www.google.com" target="_blank">Links uz Google</a><br><br>
-	
-	<table id="tabula" border="1" cellpadding="10" cellspacing="4">
-		<tr>
-			<td>1</td><td>2</td><td bgcolor="green">3</td><td>4</td>
-		</tr>
-		<tr>
-			<td>5</td><td bgcolor="green">6</td><td>7</td><td>8</td>
-		</tr>
-	</table><br><br>
-	
-	<button id="poga1">Nospiest1</button>
-	<button id="poga2">Nospiest2</button><br><br>
-<script>
-	document.getElementById("poga1").addEventListener("click",func1);
-	
-	document.getElementById("poga2").addEventListener("click",func2);
-	
-	document.getElementById("bilde").addEventListener("mouseover",func3);
-	
-	document.getElementById("bilde").addEventListener("mouseout",func4);
-	
-	
+      <section>
+        <div class="flex-container2">
+            <h2>Skills</h2>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" alt="JavaScript" title="JavaScript" width="36" height="36" /></a><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg" alt="VS Code" title="VS Code" width="36" height="36" /></a><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" alt="HTML5" title="HTML5" width="36" height="36" /></a><a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" alt="CSS3" title="CSS3" width="36" height="36" /></a><a href="https://jquery.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/jquery-colored.svg" alt="JQuery" title="JQuery" width="36" height="36" /></a></p>
+        </div>
 
-	//pirma poga
-	function func1() {
-		document.body.style.backgroundColor = "lightgreen";
-		p1.style.color = "blue";
-		p2.style.color = "blue";
-	}
-		
-	//otra poga	
-	function func2() {
-        let row = tabula.insertRow();
-            for (let i = 0; i < 4; i++) {
-                let cell = row.insertCell();
-			}
-    }
+        <div class="flex-container3">
+            <h2>Education</h2>
+            <img class="certificate" src="images/certificate.jpg" alt="Certificate">
+            <p>PIKC "Riga Technical College" (2017-2021)</p>
+            <p>Macibu centrs "Dialogs AB" (2025)</p>
+        </div>
 
-	//attels
-	function func3() {
-        bilde.width = 400;
-        bilde.height = 300;
-    }
-	
-	function func4() {
-        bilde.width = 300;
-        bilde.height = 250;
-    }
+        <div class="flex-container4">
+            <h2>Languages</h2>
+            <p>English, Latvian, Russian</p>
+        </div>
+      </section>
 
-</script>
-</body>
+      <footer>
+        <a href="https://www.linkedin.com/in/denzyy">LinkedIn</a>
+        <a href="https://github.com/itdenzyy">My portfolio</a>
+        <a href="mailto:denissmaklers@gmail.com">Contact</a>
+      </footer>
+  </body>
 </html>
